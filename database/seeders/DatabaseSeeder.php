@@ -4,7 +4,7 @@ use App\Images;
 /* importamos el modelo a ocupar category Model*/
 
 use App\Categories;
-use App\article;
+use App\Article;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\BD;
 
@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
       de datos a nuestra BD */
           factory(Images::class,$cantidadImages)->create();
           factory(Categories::class,500)->create();
-          factory(article::class,500)->create();
+          factory(Article::class,500)->create();
               //$this->call(UsersTableSeeder::class);
     {
         // \App\Models\User::factory(10)->create();
